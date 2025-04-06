@@ -1,0 +1,97 @@
+.sites-page {
+  background-color: #cde1f0;
+    border-radius: 20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #084b66;
+}
+
+.page-title {
+  text-align: center;
+  color: #084b66;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.sites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center; /* Centers the cards horizontally */
+    justify-items: center;
+}
+
+.site-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+   max-width: 300px;
+}
+
+.site-card.no-border {
+  box-shadow: none;
+}
+
+.site-card h2 {
+  color: #084b66;
+  margin: 0 0 10px;
+}
+
+.site-card p {
+  margin: 5px 0;
+}
+
+.view-details-btn {
+  background-color: #084b66;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.view-details-btn:hover {
+  background-color: #072e46;
+  color: rgb(127, 127, 127);
+}
+
+.site-detail {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  color: #084b66;
+}
+
+.site-detail h2 {
+  margin-top: 0;
+}
+
+.severity {
+  font-weight: bold;
+}
+
+.severity.critical {
+  color: red;
+}
+
+.severity.warning {
+  color: orange;
+}
+
+.close-btn {
+  background: #084b66;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+.close-btn:hover {
+  background: #b92b2b;
+  color: white;
+}

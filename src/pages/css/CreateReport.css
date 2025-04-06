@@ -1,0 +1,126 @@
+/* General container styling */
+.create-report-container {
+  max-width: 1000px; 
+  margin: 50px auto;
+  padding: 40px; 
+  background: #f9f9f9;
+  border-radius: 16px; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto", sans-serif;
+}
+
+/* Grid layout for the form */
+.create-report-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 50px;
+  overflow-y: scroll;
+}
+
+/* Full-width elements (like the button) */
+.button-container,
+.error-message {
+  grid-column: span 2; 
+  text-align: center;
+}
+
+/* General label styling */
+.create-report-container label {
+  font-weight: bold;
+  font-size: 16px; 
+  color: #333;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+/* Input fields */
+.create-report-container input,
+.create-report-container select,
+.create-report-container .date-picker {
+  width: 100%;
+  padding: 14px; 
+  margin-top: 4px;
+  border: 1px solid #ddd;
+  border-radius: 8px; 
+  font-size: 16px; 
+  background: #fff;
+  color: #333;
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.create-report-container input:focus,
+.create-report-container select:focus,
+.create-report-container .date-picker:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.2);
+  outline: none;
+}
+
+/* Multi-select dropdown */
+.create-report-container select[multiple] {
+  height: 250px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+/* Dropdown hint */
+.create-report-container small {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-top: -8px;
+  margin-bottom: 12px;
+}
+
+/* Button styling */
+.generate-report-button {
+  display: inline-block;
+  width: 100%;
+  padding: 14px;
+  font-size: 18px; 
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.generate-report-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 6px 10px rgba(0, 123, 255, 0.3);
+}
+
+.generate-report-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Error message */
+.error-message {
+  color: #d9534f;
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .create-report-container {
+    grid-template-columns: 1fr; 
+    gap: 15px; 
+    padding: 20px;
+  }
+
+  .generate-report-button {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+.create-report-container small {
+  margin-top: 8px; 
+  display: block; 
+}

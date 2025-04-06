@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Site 1",
+    "location": "123 Industrial Zone, City",
+    "ffm": "Mario Rossi",
+    "ffmContact": "ffm@example.com",
+    "machines": 16,
+    "alerts": 3,
+    "lastMaintenance": "2024-12-01",
+    "alertsDetails": [
+      { "machineId": "123", "issue": "High temperature", "severity": "Critical" },
+      { "machineId": "125", "issue": "Oil level low", "severity": "Warning" },
+      { "machineId": "130", "issue": "Belt misaligned", "severity": "Critical" }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Site 2",
+    "location": "456 Industrial Park, Town",
+    "ffm": "Jane Smith",
+    "ffmContact": "jane.smith@example.com",
+    "machines": 60,
+    "alerts": 1,
+    "lastMaintenance": "2024-11-28",
+    "alertsDetails": [
+      { "machineId": "210", "issue": "Low coolant level", "severity": "Warning" }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Site 3",
+    "location": "789 Factory Ave, Region",
+    "ffm": "Alice Johnson",
+    "ffmContact": "alice.johnson@example.com",
+    "machines": 40,
+    "alerts": 2,
+    "lastMaintenance": "2024-12-05",
+    "alertsDetails": [
+      { "machineId": "330", "issue": "Overheating motor", "severity": "Critical" },
+      { "machineId": "340", "issue": "Low battery", "severity": "Warning" }
+    ]
+  }
+]

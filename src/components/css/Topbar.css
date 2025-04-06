@@ -1,0 +1,95 @@
+.topbar {
+  height: 60px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Proper spacing between left and right sections */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+.topbar-right {
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Consistent spacing between notification and avatar */
+  flex-shrink: 0; /* Prevent elements from shrinking */
+}
+
+.notification-icon {
+  font-size: 25px;
+  color: #066c94;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.notification-icon:hover {
+  color: #a1d9f0;
+}
+
+.MuiAvatar-root {
+  background-color: #066c94;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.MuiAvatar-root:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.notification-wrapper {
+  position: relative; /* To position the dropdown relative to the icon */
+}
+
+.notification-dropdown {
+  position: absolute;
+  top: 40px; /* Dropdown position relative to the icon */
+  right: 0;
+  width: 250px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.notification-item {
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
+
+.notification-item:hover {
+  background-color: #f9f9f9;
+}
+
+.translation-dropdown {
+  position: absolute;
+  top: 40px;
+  /* Dropdown position relative to the icon */
+  right: 0;
+  width: 60px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.separator {
+  width: 10px;
+  height: 10px;
+}

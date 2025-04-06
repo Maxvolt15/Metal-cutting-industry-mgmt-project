@@ -1,0 +1,57 @@
+/* Report.css */
+
+.create-report-button {
+  display: inline-flex; /* Center alignment */
+  left: 2px;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #084b66; 
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.create-report-button:hover {
+  background-color: #062d42; /* Slightly darker shade for hover effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds depth on hover */
+}
+
+.button-container {
+  margin-top: 20px;
+  text-align: center; /* Ensures the button stays centered */
+}
+
+/* Style the table */
+table {
+  border-collapse: collapse;
+  width: 80%; /* Adjust width as needed */
+  background-color: #f9f9f9;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+table th {
+  background-color: #084b66;
+  color: white;
+  font-weight: bold;
+}
+
+.delete-button {
+  font-size: 22px;
+ color: black;
+}
+
+.delete-button:hover {
+  color:red;
+}

@@ -1,0 +1,84 @@
+/* General layout styling */
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #f4f5f7;
+    /* Light background for contrast */
+}
+
+.login-wrapper h1 {
+    font-size: 2rem;
+    color: #333;
+    /* Match dashboard text color */
+    margin-bottom: 1.5rem;
+}
+
+/* Form container styling */
+form {
+    background-color: #ffffff;
+    /* White form card */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* Form input styling */
+form div {
+    margin-bottom: 1.5rem;
+}
+
+form label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+    /* Slightly darker label color */
+}
+
+form input {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+form input:focus {
+    border-color: #007bff;
+    /* Dashboard's blue accent */
+    outline: none;
+}
+
+/* Button styling */
+button[type="submit"] {
+    padding: 0.8rem;
+    border-radius: 4px;
+    background-color: #084b66;
+    /* Custom dark blue color */
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #062f43;
+    color: #8998a0;
+    /* Slightly darker shade on hover */
+}
+
+/* Error message styling */
+form p {
+    color: red;
+    font-size: 0.9rem;
+    text-align: center;
+}
