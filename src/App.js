@@ -9,7 +9,7 @@ import MyRoutes from "./components/Routes";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { TranslationProvider } from "./hooks/translation";
 
-const baseUrl = "https://api-656930476914.europe-west1.run.app/api/v1.0";
+const baseUrl = "";
 
 function App() {
   const [token, setToken] = useState(null);
